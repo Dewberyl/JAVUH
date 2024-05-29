@@ -1,0 +1,121 @@
+/* JavaFX CSS - Leave this comment until you have at least created one rule which uses -fx-Property */
+
+.stack-pane {
+    -fx-alignment: center;
+}
+
+.grid-pane {
+    -fx-alignment: center;
+   
+}
+
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-radius: 30px;
+    -fx-border-width: 2px;
+    -fx-text-fill: white;
+}
+
+.password-field {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-radius: 30px;
+    -fx-border-width: 2px;
+    -fx-text-fill: white;
+}
+
+.button-login-signup-reset-transparent {
+    /* -fx-background-color: #e8c300; */
+    -fx-background-radius: 30, 30, 30, 30;
+    -fx-border-color: white;
+    -fx-border-radius: 30px;
+    -fx-border-width: 2px;
+    
+    /* -fx-padding: 5px 10px
+     * Pading kasi nag-ooverflow yung color sa border, but hindi effective.
+    */
+    
+}
+
+.button-forgotpass-transparent {
+    -fx-background-color: transparent;
+}
+
+.button-signupRedirect-transparent {
+    -fx-background-color: transparent;
+}
+
+.button-homeRedirect-transparent {
+    -fx-background-color: transparent;
+}
+
+.button-aboutRedirect-transparent {
+    -fx-background-color: transparent;
+}
+
+/* .button-exit-transparent {
+	-fx-background-color: transparent;
+	
+} */
+
+/*
+.button-maximize-transparent {
+	-fx-background-color: transparent;
+
+	* I removed this function on my Main.java and xml since
+	  hindi ko na ginamit yung maximize button.
+	 
+	  */
+
+/* .button-minimize-transparent {
+	-fx-background-color: transparent; 
+	
+} */
+
+ /* For the Sign Up below... */
+ 
+.choice-box-question-transparent {
+	-fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-radius: 30px;
+    -fx-border-width: 2px;
+    -fx-text-fill: white;
+}
+
+.choice-box .arrow {
+    -fx-padding: 1em 2em; /* Para sa adjustment ng arrow (enlargement). */
+    -fx-fill: white;
+}
+
+/* Lag kapag inapply ko to
+ * .stroke-text-about {
+	-fx-stroke-width: 1px;
+    -fx-stroke: black;
+} */
+
+/*  .choice-box .arrow-button .arrow {
+    -fx-background-color: white; * Para ma-set sa puti ang arrow, but hindi gumagana.
+} */
+
+/* For the DialogPane...
+.my-alert {
+    -fx-background-color: #90EE90;
+    -fx-border-color: #006400;
+    -fx-border-width: 7px;
+    -fx-font-size: 14px;
+    -fx-font-family: "Century Gothic";
+}
+
+* Bg centered not working
+.root {
+	-fx-background-image:url('aboutusBg.png');
+	-fx-background-size:cover;
+} */
+
+.bg-test {
+	-fx-background-image:url('aboutusBg.png');
+	-fx-background-size:cover;
+	
+	
+}

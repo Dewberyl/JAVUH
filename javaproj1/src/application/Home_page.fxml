@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="719.0" prefWidth="1279.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/hpbg.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="myplpLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="33.666666666666664" layoutY="215.0" prefHeight="103.0" prefWidth="872.0" text="WELCOME TO PAMANTASAN NG LUNGSOD NG PASIG" textFill="WHITE" AnchorPane.leftAnchor="33.666666666666664" AnchorPane.rightAnchor="34.33333333333337">
+         <font>
+            <Font name="Tahoma" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="mygstitleLabel" alignment="CENTER" contentDisplay="CENTER" layoutY="286.0" prefHeight="121.0" prefWidth="1052.0" text="GRADING SYSTEM PORTAL" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Impact" size="99.0" />
+         </font>
+      </Label>
+      <BorderPane layoutX="368.0" layoutY="413.0" prefHeight="200.0" prefWidth="313.0" AnchorPane.leftAnchor="368.0" AnchorPane.rightAnchor="371.33333333333326">
+         <top>
+            <Button fx:id="mytologinButton" mnemonicParsing="false" onAction="#swtichToLogin" prefHeight="80.0" prefWidth="215.0" style="-fx-background-color: #e8c300; -fx-background-radius: 35;" text="LOG IN" textAlignment="CENTER" textFill="#2b2a28" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Impact" size="33.0" />
+               </font>
+            </Button>
+         </top>
+      </BorderPane>
+      <Button fx:id="mytohomeButton" layoutX="901.0" layoutY="25.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="69.0" prefWidth="63.0" style="-fx-background-color: Transparent;" />
+      <Button fx:id="mytoaboutButton" layoutX="1000.0" layoutY="17.0" mnemonicParsing="false" onAction="#switchToAbout" prefHeight="86.0" prefWidth="96.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="mysignupButton" layoutX="1122.0" layoutY="21.0" mnemonicParsing="false" onAction="#swtichToSignUp" prefHeight="77.0" prefWidth="96.0" style="-fx-background-color: tranparent;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="639.5" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1284.0" layoutY="-22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/bgs.png" />
+         </image>
+      </ImageView>
+      <GridPane hgap="10.0" layoutX="2.0" layoutY="-2.0" prefHeight="680.0" prefWidth="640.0" vgap="10.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.5" AnchorPane.topAnchor="-2.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="360.3333435058594" minHeight="10.0" prefHeight="360.3333435058594" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="351.66668701171875" minHeight="10.0" prefHeight="106.99994913736981" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="325.6666564941406" minHeight="10.0" prefHeight="172.3333841959635" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="myloginTextField" layoutX="63.0" layoutY="267.0" prefHeight="80.0" prefWidth="505.0" promptText="Username" stylesheets="@application.css">
+                     <font>
+                        <Font name="Century Gothic" size="25.0" />
+                     </font>
+                  </TextField>
+                  <Text fill="#e8c300" layoutX="108.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="____" textAlignment="CENTER" wrappingWidth="188.13672637939453">
+                     <font>
+                        <Font name="Century Gothic" size="80.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#e8c300" layoutX="126.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" textAlignment="CENTER" wrappingWidth="153.47007751464844">
+                     <font>
+                        <Font name="Century Gothic Bold" size="40.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="331.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="____" textAlignment="CENTER" wrappingWidth="188.13672637939453">
+                     <font>
+                        <Font name="Century Gothic" size="80.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="mytosignupButton" layoutX="327.0" layoutY="127.0" mnemonicParsing="false" onAction="#swtichToSignUp" style="-fx-background-color: transparent;" text="Sign Up" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="40.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <PasswordField fx:id="myloginPasswordField" layoutX="63.0" layoutY="20.0" prefHeight="80.0" prefWidth="505.0" promptText="Password" stylesheets="@application.css">
+                     <font>
+                        <Font name="Century Gothic" size="25.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="myforgotpassButton" alignment="BASELINE_LEFT" layoutX="38.0" layoutY="7.0" mnemonicParsing="false" onAction="#switchToResetpass" prefHeight="80.0" prefWidth="358.0" style="-fx-background-color: transparent;" stylesheets="@application.css" text="Forgot your password?" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="29.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="myLoginButton" layoutX="399.0" layoutY="7.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="169.0" style="-fx-background-color: #e8c300; -fx-background-radius: 30; -fx-border-width: 2; -fx-border-color: white; -fx-border-radius: 30;" stylesheets="@application.css" text="Login" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="28.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+      <Button fx:id="mytohomeButton" layoutX="958.0" layoutY="18.0" mnemonicParsing="false" onAction="#switchToHome" onMouseClicked="#switchToHome" prefHeight="33.0" prefWidth="85.0" style="-fx-background-color: transparent;" styleClass="button-homeRedirect-transparent" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="mytoaboutButton" layoutX="1052.0" layoutY="18.0" mnemonicParsing="false" onAction="#switchToAbout" prefHeight="36.0" prefWidth="112.0" style="-fx-background-color: transparent;" styleClass="button-aboutRedirect-transparent" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

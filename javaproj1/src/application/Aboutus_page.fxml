@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="719.0" prefWidth="1279.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/aubg.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="myaboutusLabel" alignment="CENTER" layoutX="5.666666666666667" layoutY="56.0" prefHeight="74.0" prefWidth="1052.0" text="ABOUT US" AnchorPane.leftAnchor="5.666666666666667" AnchorPane.rightAnchor="-1.6666666666667425">
+         <font>
+            <Font name="Impact" size="60.0" />
+         </font>
+      </Label>
+      <Label fx:id="myaboutusLabel2" alignment="CENTER" layoutX="1.3333333333333333" layoutY="51.0" prefHeight="74.0" prefWidth="1052.0" text="ABOUT US" textFill="WHITE" AnchorPane.leftAnchor="1.3333333333333333" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Impact" size="60.0" />
+         </font>
+      </Label>
+      <StackPane layoutX="11.0" layoutY="127.0" prefHeight="101.0" prefWidth="1033.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="7.333333333333485">
+         <children>
+            <Text fx:id="myaboutusText" strokeType="OUTSIDE" strokeWidth="0.0" text="The Pamantasan ng Lungsod ng Pasig is the realization of our long cherished dream for all Pasigueños. Now, we can proudly claim that the Pasig City Government has provided for the complete education needs of its constituents – from day care to college." textAlignment="CENTER" wrappingWidth="943.0118029117584">
+               <font>
+                  <Font name="Calibri" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+      <StackPane layoutX="10.0" layoutY="125.0" prefHeight="101.0" prefWidth="1033.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="9.333333333333258">
+         <children>
+            <Text fx:id="myaboutusText2" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The Pamantasan ng Lungsod ng Pasig is the realization of our long cherished dream for all Pasigueños. Now, we can proudly claim that the Pasig City Government has provided for the complete education needs of its constituents – from day care to college." textAlignment="CENTER" wrappingWidth="943.0118029117584">
+               <font>
+                  <Font name="Calibri" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+      <StackPane layoutX="11.333333333333336" layoutY="222.0" prefHeight="150.0" prefWidth="1033.0" AnchorPane.leftAnchor="11.333333333333336" AnchorPane.rightAnchor="7.333333333333485">
+         <children>
+            <Text fx:id="myaboutusText3" strokeType="OUTSIDE" strokeWidth="0.0" text="By using all available facilities and resources of the City through integrated activities and networking initiated by the Pamantasan, we foresee our youth to be at par with the world’s best in terms of competencies that develop in each one of them a strong sense of nationhood, responsibility, integrity, efficiency, and global consciousness." textAlignment="CENTER" wrappingWidth="967.4595603942871">
+               <font>
+                  <Font name="Calibri" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+      <StackPane layoutX="9.333333333333334" layoutY="220.0" prefHeight="150.0" prefWidth="1033.0" AnchorPane.leftAnchor="9.333333333333334" AnchorPane.rightAnchor="9.333333333333258">
+         <children>
+            <Text fx:id="myaboutusText4" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="By using all available facilities and resources of the City through integrated activities and networking initiated by the Pamantasan, we foresee our youth to be at par with the world’s best in terms of competencies that develop in each one of them a strong sense of nationhood, responsibility, integrity, efficiency, and global consciousness." textAlignment="CENTER" wrappingWidth="967.4595603942871">
+               <font>
+                  <Font name="Calibri" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+      <Button fx:id="mytosignupButton" layoutX="1128.0" layoutY="28.0" mnemonicParsing="false" onAction="#swtichToSignUp" prefHeight="60.0" prefWidth="81.0" style="-fx-background-color: transparent;" />
+      <Button layoutX="933.0" layoutY="24.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="60.0" prefWidth="63.0" style="-fx-background-color: Transparent;" />
+      <Button fx:id="mytoaboutButton" layoutX="1017.0" layoutY="28.0" mnemonicParsing="false" onAction="#swtichToLogin" prefHeight="60.0" prefWidth="96.0" style="-fx-background-color: transparent;" />
+   </children>
+</AnchorPane>

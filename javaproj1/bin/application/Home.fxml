@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <ImageView fx:id="myhomeImageView" fitHeight="720.0" fitWidth="1284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/welcomeBg.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="myplpText" fill="WHITE" layoutX="211.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO PAMANTASAN NG LUNGSOD NG PASIG" textAlignment="CENTER">
+         <font>
+            <Font name="Tahoma" size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="mygstitleText" fill="WHITE" layoutX="149.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GRADING SYSTEM PORTAL" textAlignment="CENTER">
+         <font>
+            <Font name="Impact" size="99.0" />
+         </font>
+      </Text>
+      <Button fx:id="tologinfromhomeButton" layoutX="532.0" layoutY="435.0" mnemonicParsing="false" onAction="#swtichToLogin" prefHeight="80.0" prefWidth="216.0" style="-fx-background-color: #e8c300; -fx-background-radius: 35;" text="LOG IN" textAlignment="CENTER" textFill="#2b2a28">
+         <font>
+            <Font name="Impact" size="33.0" />
+         </font>
+      </Button>
+      <Button layoutX="849.0" layoutY="46.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="33.0" prefWidth="63.0" style="-fx-background-color: Transparent;" />
+      <Button fx:id="mytoaboutButton" layoutX="947.0" layoutY="50.0" mnemonicParsing="false" onAction="#switchToAbout" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="mysignupButton" layoutX="1083.0" layoutY="50.0" mnemonicParsing="false" onAction="#swtichToSignUp" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: tranparent;" />
+      <Button fx:id="myminimizeButton" layoutX="1194.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#minimizeProgram" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: tranparent;" />
+      <Button fx:id="myexitButton" layoutX="1233.0" layoutY="18.0" mnemonicParsing="false" onMouseClicked="#exitProgram" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: tranparent;" />
+   </children>
+</AnchorPane>
